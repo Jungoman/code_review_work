@@ -4,28 +4,31 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+    Calculator calculator = new Calculator();
+
     @Test
     void add() {
-        //TODO inser your realisation in test-method add
+        assertEquals(3, calculator.add(1, 2));
     }
 
     @Test
     void dif() {
-        //TODO inser your realisation in test-method dif
+        assertEquals(3, calculator.dif(5, 2));
     }
 
     @Test
     void div() {
-        //TODO inser your realisation in test-method div
+        assertEquals(3, calculator.div(12, 4));
     }
 
     @Test
     void times() {
-        //TODO inser your realisation in test-method times
+        assertEquals(20, calculator.times(5, 4));
     }
 
+    //Pythagorean theorem
     @Test
     void solver() {
-        //TODO inser your realisation in test-method solver
+        assertEquals(5, calculator.solver(3, 4));
     }
 }
