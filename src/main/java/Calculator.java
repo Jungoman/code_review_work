@@ -11,7 +11,9 @@ public class Calculator {
     public int times(int a, int b){
         return a*b;
     }
-    public int solver(int a, int b){ //Pythagorean theorem
-        return (int) Math.sqrt(a*a+b*b);
+
+    //Pythagorean theorem
+    public int solver(int a, int b){
+        return (int) Math.sqrt(add(times(a,a), times(b,b)));
     }
 }

@@ -26,8 +26,9 @@ class CalculatorTest {
         assertEquals(20, calculator.times(5, 4));
     }
 
+    //Pythagorean theorem
     @Test
-    void solver() { //Pythagorean theorem
+    void solver() {
         assertEquals(5, calculator.solver(3, 4));
     }
 }
